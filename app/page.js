@@ -299,10 +299,14 @@ const Demo2 = () => {
             />
             <p className="mb-6 opacity-60 text-[15px]">About Kutumia</p>
             <p className="text-[15px] sm:text-base leading-relaxed sm:leading-loose">
-              This domain (kutumia.ro) is owned and operated by Asociația
-              Kutumia, a registered nonprofit organization in Romania. Official
-              contact: contact@kutumia.ro Website currently under development.
+              This domain <strong>(kutumia.ro)</strong> is owned and operated by{" "}
+              <strong>Asociația Kutumia</strong>, a registered nonprofit
+              organization in Romania.
             </p>
+            <p>
+              Official contact: <strong>contact@kutumia.ro </strong>
+            </p>
+            <p>Website currently under development.</p>
 
             <ul className="flex gap-3 mt-8 [&_a]:bg-gray-100">
               {/* <li className="hover:filter-[url(#ripples2)]">
