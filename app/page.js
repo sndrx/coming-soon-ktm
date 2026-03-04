@@ -290,9 +290,9 @@ const Demo2 = () => {
 
           <div className="mt-auto">
             <Image
-              src="/ktm-logo.png"
+              src="/ktm-logo-transparent.png"
               alt="01"
-              className="d-block w-16 lg:w-36 aspect-square object-cover hover:scale-110 duration-[1s] cursor-pointer transition-transform ease-[cubic-bezier(0.16,_1,_0.3,_1)] rounded-lg"
+              className="mb-6 d-block w-16 lg:w-16 aspect-square object-cover hover:scale-110 duration-[1s] cursor-pointer transition-transform ease-[cubic-bezier(0.16,_1,_0.3,_1)] rounded-lg"
               height={50}
               width={50}
             />

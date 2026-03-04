@@ -1,1 +1,38 @@
-[00:00:01.296] Server  LOG     ✓ Ready in 964ms
+[00:00:01.050] Server  LOG     ✓ Ready in 748ms
+[00:00:27.236] Server  LOG     ✓ Compiled in 381ms
+[00:00:27.371] Browser WARN    Image with src "/ktm-logo-transparent.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:39.579] Server  LOG     ✓ Compiled in 68ms
+[00:00:40.594] Server  LOG     ✓ Compiled in 134ms
+[00:00:40.701] Browser ERROR   ./app/page.js:297:15
+Parsing ecmascript source code failed
+  295 |               className="d-block w-16 lg:w-36 aspect-square object-cover hover:scale-110 duration-[1s] cursor-pointer transition-transform ease-[cubic-bezier(0.16,_1,_0.3,_1)] rounded-lg"
+  296 |               height={}
+> 297 |               width={50}
+      |               ^^^^^
+  298 |             />
+  299 |             <p className="mb-6 opacity-60 text-[15px]">About Kutumia</p>
+  300 |             <p className="text-[15px] sm:text-base leading-relaxed sm:leading-loose">
+
+Expected '</', got 'ident'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.js [Client Component Browser]
+    ./app/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/page.js [Client Component SSR]
+    ./app/page.js [Server Component]
+[00:00:41.158] Server  LOG     ✓ Compiled in 55ms
+[00:00:42.629] Server  LOG     ✓ Compiled in 55ms
+[00:00:42.708] Server  LOG     ✓ Compiled in 44ms
+[00:00:42.751] Browser WARN    Image with src "/ktm-logo-transparent.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:55.711] Server  LOG     ✓ Compiled in 64ms
+[00:00:57.549] Server  LOG     ✓ Compiled in 171ms
+[00:00:57.786] Server  LOG     ✓ Compiled in 58ms
+[00:00:58.561] Server  LOG     ✓ Compiled in 59ms
+[00:00:58.783] Server  LOG     ✓ Compiled in 49ms
+[00:01:20.838] Server  LOG     ✓ Compiled in 42ms
+[00:01:21.158] Server  LOG     ✓ Compiled in 38ms

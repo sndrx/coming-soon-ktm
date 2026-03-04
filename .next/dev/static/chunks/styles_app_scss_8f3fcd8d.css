@@ -3331,6 +3331,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:w-16 {
+      width: calc(var(--spacing) * 16);
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:w-28 {
       width: calc(var(--spacing) * 28);
     }
