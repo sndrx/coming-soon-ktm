@@ -289,7 +289,6 @@ const Demo2 = () => {
           </div> */}
 
           <div className="mt-auto">
-            <hr className="w-10 block mb-8" />
             <Image
               src="/ktm-logo.png"
               alt="01"
