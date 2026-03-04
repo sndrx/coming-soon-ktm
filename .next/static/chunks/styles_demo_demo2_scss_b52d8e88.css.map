@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/demo/demo2.scss.css"],"sourcesContent":["html:has(.main-content-2){--primary: #367df4;background-image:url(../../public/noise.png),repeating-linear-gradient(50deg, transparent, transparent 2px, rgba(0, 0, 0, 0.0823529412) 3px);background-size:150px}.animate-spin-slow{animation:spin-slow 60s linear infinite reverse}@keyframes spin-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}"],"names":[],"mappings":"AAAA;;;;;;AAAgN;;;;AAAmE"}}]
+}

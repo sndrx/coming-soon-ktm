@@ -1,0 +1,1 @@
+html:has(.main-content-2){--primary:#367df4;background-image:url(/_next/static/media/noise.8c1e79cd.png),repeating-linear-gradient(50deg,transparent,transparent 2px,rgba(0,0,0,.0823529412) 3px);background-size:150px}.animate-spin-slow{animation:spin-slow 60s linear infinite reverse}@keyframes spin-slow{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}

@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/demo-1",
+      "regex": "^/demo\\-1(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-1(?:/)?$"
+    },
+    {
+      "page": "/demo-10",
+      "regex": "^/demo\\-10(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-10(?:/)?$"
+    },
+    {
+      "page": "/demo-2",
+      "regex": "^/demo\\-2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-2(?:/)?$"
+    },
+    {
+      "page": "/demo-3",
+      "regex": "^/demo\\-3(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-3(?:/)?$"
+    },
+    {
+      "page": "/demo-4",
+      "regex": "^/demo\\-4(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-4(?:/)?$"
+    },
+    {
+      "page": "/demo-5",
+      "regex": "^/demo\\-5(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-5(?:/)?$"
+    },
+    {
+      "page": "/demo-6",
+      "regex": "^/demo\\-6(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-6(?:/)?$"
+    },
+    {
+      "page": "/demo-7",
+      "regex": "^/demo\\-7(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-7(?:/)?$"
+    },
+    {
+      "page": "/demo-8",
+      "regex": "^/demo\\-8(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-8(?:/)?$"
+    },
+    {
+      "page": "/demo-9",
+      "regex": "^/demo\\-9(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/demo\\-9(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

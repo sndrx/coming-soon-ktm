@@ -1,0 +1,22 @@
+/* [project]/styles/demo/demo2.scss.css [app-client] (css) */
+html:has(.main-content-2) {
+  --primary: #367df4;
+  background-image: url("../media/noise.768268a2.png"), repeating-linear-gradient(50deg, #0000, #0000 2px, #00000015 3px);
+  background-size: 150px;
+}
+
+.animate-spin-slow {
+  animation: 60s linear infinite reverse spin-slow;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=styles_demo_demo2_scss_b52d8e88.css.map*/
