@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/styles/demo/demo2.scss"],"sourcesContent":["html:has(.main-content-2) {\n  --primary: #367df4;\n\n  background-image: url(../../public/noise.png), repeating-linear-gradient(50deg, transparent, transparent 2px, #00000015 3px);\n  background-size: 150px;\n}\n\n.animate-spin-slow {\n  animation: spin-slow 60s linear infinite reverse;\n}\n@keyframes spin-slow {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}"],"names":[],"mappings":"AAAA;;;;;;AAOA;;;;AAGA"}}]
+}

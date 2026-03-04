@@ -9,6 +9,7 @@ const facultyGlyphic = Poppins({
 
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 import "@/styles/demo/demo2.scss";
@@ -289,7 +290,13 @@ const Demo2 = () => {
 
           <div className="mt-auto">
             <hr className="w-10 block mb-8" />
-
+            <Image
+              src="/ktm-logo.png"
+              alt="01"
+              className="d-block w-16 lg:w-36 aspect-square object-cover hover:scale-110 duration-[1s] cursor-pointer transition-transform ease-[cubic-bezier(0.16,_1,_0.3,_1)] rounded-lg"
+              height={100}
+              width={100}
+            />
             <p className="mb-6 opacity-60 text-[15px]">About Kutumia</p>
             <p className="text-[15px] sm:text-base leading-relaxed sm:leading-loose">
               This domain (kutumia.ro) is owned and operated by Asociația
