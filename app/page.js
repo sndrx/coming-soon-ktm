@@ -293,8 +293,8 @@ const Demo2 = () => {
               src="/ktm-logo.png"
               alt="01"
               className="d-block w-16 lg:w-36 aspect-square object-cover hover:scale-110 duration-[1s] cursor-pointer transition-transform ease-[cubic-bezier(0.16,_1,_0.3,_1)] rounded-lg"
-              height={100}
-              width={100}
+              height={50}
+              width={50}
             />
             <p className="mb-6 opacity-60 text-[15px]">About Kutumia</p>
             <p className="text-[15px] sm:text-base leading-relaxed sm:leading-loose">
