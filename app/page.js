@@ -302,31 +302,31 @@ const Demo2 = () => {
               <strong>Asociația Kutumia</strong>, a registered nonprofit
               organization in Romania.
             </p>{" "}
-            <p className="mb-6">
-              <strong>Legal name:</strong>Asociația Kutumia
+            <p className="mb-2">
+              <strong>Legal name: </strong>Asociația Kutumia
             </p>{" "}
-            <p className="mb-6">
-              <strong>Charity Id:</strong>53710769
+            <p className="mb-2">
+              <strong>Charity Id: </strong>53710769
             </p>{" "}
-            <p className="mb-6">
+            <p className="mb-2">
               <strong>Address: </strong>
               Str. Decebal, nr. 8, et.1, ap.3, jud. Cluj, mun. Cluj-Napoca,
               Cluj, Cluj{" "}
             </p>
-            <p className="mb-6">
+            <p className="mb-2">
               <strong>Country: </strong>Romania
             </p>
-            <p className="mb-6">
+            <p className="mb-2">
               <strong>Official contact: </strong>contact@kutumia.ro
             </p>
-            <p className="mb-6">
+            <p className="mb-2">
               <strong>About the organization: </strong>
               Kutumia Association is a non-governmental, nonprofit organization
               founded by three women who brought together their experiences with
               the belief that through education and learning we build people and
               communities for the future.
             </p>
-            <p className="mb-6">
+            <p className="mb-2">
               <strong>Funding: </strong>
               The activities of the organization are supported through
               donations, sponsorships and partnerships with individuals and
