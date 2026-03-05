@@ -302,41 +302,35 @@ const Demo2 = () => {
               <strong>Asociația Kutumia</strong>, a registered nonprofit
               organization in Romania.
             </p>{" "}
-            <p>
-              Legal name: <strong>Asociația Kutumia</strong>
+            <p className="mb-6">
+              <strong>Legal name:</strong>Asociația Kutumia
             </p>{" "}
-            <p>
-              Charity Id: <strong>53710769</strong>
+            <p className="mb-6">
+              <strong>Charity Id:</strong>53710769
             </p>{" "}
-            <p>
-              Address:{" "}
-              <strong>
-                Str. Decebal, nr. 8, et.1, ap.3, jud. Cluj, mun. Cluj-Napoca,
-                Cluj, Cluj{" "}
-              </strong>
+            <p className="mb-6">
+              <strong>Address: </strong>
+              Str. Decebal, nr. 8, et.1, ap.3, jud. Cluj, mun. Cluj-Napoca,
+              Cluj, Cluj{" "}
             </p>
-            <p>
-              Country: <strong>Romania</strong>
+            <p className="mb-6">
+              <strong>Country: </strong>Romania
             </p>
-            <p>
-              Official contact: <strong>contact@kutumia.ro </strong>
+            <p className="mb-6">
+              <strong>Official contact: </strong>contact@kutumia.ro
             </p>
-            <p>
-              About the organization:{" "}
-              <strong>
-                Kutumia Association is a non-governmental, nonprofit
-                organization founded by three women who brought together their
-                experiences with the belief that through education and learning
-                we build people and communities for the future.
-              </strong>
+            <p className="mb-6">
+              <strong>About the organization: </strong>
+              Kutumia Association is a non-governmental, nonprofit organization
+              founded by three women who brought together their experiences with
+              the belief that through education and learning we build people and
+              communities for the future.
             </p>
-            <p>
-              Funding:{" "}
-              <strong>
-                The activities of the organization are supported through
-                donations, sponsorships and partnerships with individuals and
-                organizations that support our mission.{" "}
-              </strong>
+            <p className="mb-6">
+              <strong>Funding: </strong>
+              The activities of the organization are supported through
+              donations, sponsorships and partnerships with individuals and
+              organizations that support our mission.{" "}
             </p>
             <p>Website currently under development.</p>
             <ul className="flex gap-3 mt-8 [&_a]:bg-gray-100">
