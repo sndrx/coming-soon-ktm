@@ -301,12 +301,44 @@ const Demo2 = () => {
               This domain <strong>(kutumia.ro)</strong> is owned and operated by{" "}
               <strong>Asociația Kutumia</strong>, a registered nonprofit
               organization in Romania.
+            </p>{" "}
+            <p>
+              Legal name: <strong>Asociația Kutumia</strong>
+            </p>{" "}
+            <p>
+              Charity Id: <strong>53710769</strong>
+            </p>{" "}
+            <p>
+              Address:{" "}
+              <strong>
+                Str. Decebal, nr. 8, et.1, ap.3, jud. Cluj, mun. Cluj-Napoca,
+                Cluj, Cluj{" "}
+              </strong>
+            </p>
+            <p>
+              Country: <strong>Romania</strong>
             </p>
             <p>
               Official contact: <strong>contact@kutumia.ro </strong>
             </p>
+            <p>
+              About the organization:{" "}
+              <strong>
+                Kutumia Association is a non-governmental, nonprofit
+                organization founded by three women who brought together their
+                experiences with the belief that through education and learning
+                we build people and communities for the future.
+              </strong>
+            </p>
+            <p>
+              Funding:{" "}
+              <strong>
+                The activities of the organization are supported through
+                donations, sponsorships and partnerships with individuals and
+                organizations that support our mission.{" "}
+              </strong>
+            </p>
             <p>Website currently under development.</p>
-
             <ul className="flex gap-3 mt-8 [&_a]:bg-gray-100">
               {/* <li className="hover:filter-[url(#ripples2)]">
                 <Link
