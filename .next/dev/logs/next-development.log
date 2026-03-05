@@ -1,20 +1,17 @@
-[00:00:01.050] Server  LOG     ✓ Ready in 748ms
-[00:00:27.236] Server  LOG     ✓ Compiled in 381ms
-[00:00:27.371] Browser WARN    Image with src "/ktm-logo-transparent.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:39.579] Server  LOG     ✓ Compiled in 68ms
-[00:00:40.594] Server  LOG     ✓ Compiled in 134ms
-[00:00:40.701] Browser ERROR   ./app/page.js:297:15
+[00:00:06.717] Server  LOG     ✓ Ready in 4.5s
+[00:02:12.287] Server  LOG     ✓ Compiled in 72ms
+[00:02:22.670] Server  LOG     ✓ Compiled in 79ms
+[00:02:22.775] Browser ERROR   ./app/page.js:156:22
 Parsing ecmascript source code failed
-  295 |               className="d-block w-16 lg:w-36 aspect-square object-cover hover:scale-110 duration-[1s] cursor-pointer transition-transform ease-[cubic-bezier(0.16,_1,_0.3,_1)] rounded-lg"
-  296 |               height={}
-> 297 |               width={50}
-      |               ^^^^^
-  298 |             />
-  299 |             <p className="mb-6 opacity-60 text-[15px]">About Kutumia</p>
-  300 |             <p className="text-[15px] sm:text-base leading-relaxed sm:leading-loose">
+  154 |           </div>
+  155 |           {/* <p>Stay Tuned!</p> */}
+> 156 |         </section> */}
+      |                      ^
+  157 |
+  158 |         {/* <svg height="0" className="hidden">
+  159 |           <filter id="ripples" x="0" y="0" width="100%" height="100%">
 
-Expected '</', got 'ident'
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
 
 Import traces:
   Client Component Browser:
@@ -24,15 +21,127 @@ Import traces:
   Client Component SSR:
     ./app/page.js [Client Component SSR]
     ./app/page.js [Server Component]
-[00:00:41.158] Server  LOG     ✓ Compiled in 55ms
-[00:00:42.629] Server  LOG     ✓ Compiled in 55ms
-[00:00:42.708] Server  LOG     ✓ Compiled in 44ms
-[00:00:42.751] Browser WARN    Image with src "/ktm-logo-transparent.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:55.711] Server  LOG     ✓ Compiled in 64ms
-[00:00:57.549] Server  LOG     ✓ Compiled in 171ms
-[00:00:57.786] Server  LOG     ✓ Compiled in 58ms
-[00:00:58.561] Server  LOG     ✓ Compiled in 59ms
-[00:00:58.783] Server  LOG     ✓ Compiled in 49ms
-[00:01:20.838] Server  LOG     ✓ Compiled in 42ms
-[00:01:21.158] Server  LOG     ✓ Compiled in 38ms
+[00:02:23.092] Browser ERROR   ./app/page.js:156:22
+Parsing ecmascript source code failed
+  154 |           </div>
+  155 |           {/* <p>Stay Tuned!</p> */}
+> 156 |         </section> */}
+      |                      ^
+  157 |
+  158 |         {/* <svg height="0" className="hidden">
+  159 |           <filter id="ripples" x="0" y="0" width="100%" height="100%">
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/page.js [Client Component Browser]
+    ./app/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/page.js [Client Component SSR]
+    ./app/page.js [Server Component]
+[00:02:33.440] Server  LOG     ✓ Compiled in 47ms
+[00:02:33.749] Server  LOG     ✓ Compiled in 46ms
+[00:02:48.221] Server  LOG     ✓ Compiled in 94ms
+[00:02:48.324] Browser ERROR   ./app/page.js:377:23
+Parsing ecmascript source code failed
+  375 |           </div> */}
+  376 |         </div>
+> 377 |       </motion.aside> */}
+      |                       ^
+  378 |
+  379 |       {/* sidebar overlay */}
+  380 |       <section
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.js [Client Component Browser]
+    ./app/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/page.js [Client Component SSR]
+    ./app/page.js [Server Component]
+[00:02:48.324] Browser ERROR   ./app/page.js:377:24
+Parsing ecmascript source code failed
+  375 |           </div> */}
+  376 |         </div>
+> 377 |       </motion.aside> */}
+      |                        ^^
+  378 |
+  379 |       {/* sidebar overlay */}
+  380 |       <section
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.js [Client Component Browser]
+    ./app/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/page.js [Client Component SSR]
+    ./app/page.js [Server Component]
+[00:02:50.379] Server  LOG     ✓ Compiled in 44ms
+[00:02:51.022] Server  LOG     ✓ Compiled in 84ms
+[00:03:05.223] Server  LOG     ✓ Compiled in 92ms
+[00:03:06.233] Server  LOG     ✓ Compiled in 50ms
+[00:03:08.586] Server  LOG     ✓ Compiled in 37ms
+[00:03:08.914] Server  LOG     ✓ Compiled in 60ms
+[00:03:34.402] Server  LOG     ✓ Compiled in 52ms
+[00:03:44.950] Server  LOG     ✓ Compiled in 50ms
+[00:03:45.222] Server  LOG     ✓ Compiled in 47ms
+[00:03:49.320] Server  LOG     ✓ Compiled in 41ms
+[00:03:49.668] Server  LOG     ✓ Compiled in 42ms
+[00:03:54.101] Server  LOG     ✓ Compiled in 44ms
+[00:03:54.658] Server  LOG     ✓ Compiled in 42ms
+[00:03:58.582] Server  LOG     ✓ Compiled in 46ms
+[00:03:59.890] Server  LOG     ✓ Compiled in 46ms
+[00:04:01.248] Server  LOG     ✓ Compiled in 48ms
+[00:04:39.860] Server  LOG     ✓ Compiled in 47ms
+[00:04:40.120] Server  LOG     ✓ Compiled in 51ms
+[00:04:40.214] Browser WARN    Image with src "/ktm-logo-transparent.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:42.290] Server  LOG     ✓ Compiled in 37ms
+[00:04:45.794] Browser WARN    Image with src "/ktm-logo-transparent.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:50.398] Server  LOG     ✓ Compiled in 46ms
+[00:04:50.645] Server  LOG     ✓ Compiled in 49ms
+[00:05:03.037] Server  LOG     ✓ Compiled in 35ms
+[00:05:03.337] Server  LOG     ✓ Compiled in 36ms
+[00:05:03.793] Server  LOG     ✓ Compiled in 40ms
+[00:05:04.124] Server  LOG     ✓ Compiled in 36ms
+[00:05:04.636] Server  LOG     ✓ Compiled in 47ms
+[00:05:04.702] Server  LOG     ✓ Compiled in 34ms
+[00:05:04.864] Server  LOG     ✓ Compiled in 37ms
+[00:05:07.524] Browser WARN    Image with src "/ktm-logo-transparent.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:05:11.276] Server  LOG     ✓ Compiled in 40ms
+[00:05:11.446] Server  LOG     ✓ Compiled in 44ms
+[00:05:11.600] Server  LOG     ✓ Compiled in 35ms
+[00:05:11.748] Server  LOG     ✓ Compiled in 41ms
+[00:05:11.896] Server  LOG     ✓ Compiled in 33ms
+[00:05:12.052] Server  LOG     ✓ Compiled in 35ms
+[00:05:12.544] Server  LOG     ✓ Compiled in 37ms
+[00:06:34.933] Server  LOG     ✓ Compiled in 48ms
+[00:06:35.153] Server  LOG     ✓ Compiled in 46ms
+[00:06:35.320] Server  LOG     ✓ Compiled in 36ms
+[00:06:35.527] Server  LOG     ✓ Compiled in 41ms
+[00:06:35.675] Server  LOG     ✓ Compiled in 52ms
+[00:06:35.785] Server  LOG     ✓ Compiled in 50ms
+[00:06:36.245] Server  LOG     ✓ Compiled in 47ms
+[00:06:36.320] Server  LOG     ✓ Compiled in 41ms
+[00:06:36.472] Server  LOG     ✓ Compiled in 39ms
+[00:06:36.569] Server  LOG     ✓ Compiled in 43ms
+[00:06:36.641] Server  LOG     ✓ Compiled in 41ms
+[00:06:38.893] Browser WARN    Image with src "/ktm-logo-transparent.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:44.694] Server  LOG     ✓ Compiled in 54ms
+[00:07:02.076] Server  LOG     ✓ Compiled in 60ms
+[00:07:02.291] Server  LOG     ✓ Compiled in 40ms
+[00:07:02.462] Server  LOG     ✓ Compiled in 40ms
+[00:07:02.726] Server  LOG     ✓ Compiled in 46ms
+[00:07:03.026] Server  LOG     ✓ Compiled in 38ms
+[00:07:03.157] Server  LOG     ✓ Compiled in 44ms
+[00:07:03.220] Server  LOG     ✓ Compiled in 37ms
+[00:07:03.344] Server  LOG     ✓ Compiled in 34ms
+[00:07:03.901] Server  LOG     ✓ Compiled in 44ms
+[00:07:04.076] Server  LOG     ✓ Compiled in 42ms

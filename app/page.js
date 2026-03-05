@@ -111,12 +111,13 @@ const Demo2 = () => {
         className="main-content-2 px-8 flex-1"
       >
         {/* Header */}
-        <header className="flex justify-between items-center py-8">
+        <header className="flex justify-between items-center py-8 inline-block">
           <div className="w-1/2 lg:w-full lg:text-center">
             <Link className="font-bold text-3xl" href="/" aria-label="Logo">
               Asociația Kutumia
             </Link>
           </div>
+
           {/* <div className="w-1/2 block lg:hidden text-end">
             <button
               onClick={toggleNotifyPanel}
@@ -131,31 +132,8 @@ const Demo2 = () => {
         </header>
 
         {/* Content */}
-        <section className="grid place-content-center text-center h-[calc(100vh-200px)]">
-          {/* <p>Our New Site Is</p> */}
-          <div className="filter-[url(#ripples)]">
-            <svg
-              className="w-64 sm:w-72 animate-spin-slow"
-              viewBox="0 0 460 460"
-            >
-              <defs>
-                <path
-                  id="circle-button-text"
-                  d="M230,380 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
-                ></path>
-              </defs>
 
-              {/* <text className="text-uppercase text-[2.1rem] uppercase">
-                <textPath fill="currentColor" href="#circle-button-text">
-                  În curând — În curând — În curând — În curând -
-                </textPath>
-              </text> */}
-            </svg>
-          </div>
-          {/* <p>Stay Tuned!</p> */}
-        </section>
-
-        <svg height="0" className="hidden">
+        {/* <svg height="0" className="hidden">
           <filter id="ripples" x="0" y="0" width="100%" height="100%">
             <feTurbulence
               type="turbulence"
@@ -187,154 +165,48 @@ const Demo2 = () => {
             ></feTurbulence>
             <feDisplacementMap scale="5" in="SourceGraphic"></feDisplacementMap>
           </filter>
-        </svg>
+        </svg> */}
 
-        {/* footer */}
-        <footer className="py-8">
-          <div className="text-center">
-            <span className="text-sm text-balance inline-block">
-              &copy; {new Date().getFullYear()} Asociația Kutumia
-            </span>
-          </div>
-        </footer>
-      </motion.section>
-
-      {/* sidebar */}
-      <motion.aside
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4, delay: 0.15 }}
-        className={`${isNotifyOpen ? "" : "translate-x-full lg:translate-x-0"} transition lg:transition-none duration-200 fixed lg:static h-screen z-[9999] bg-white lg:bg-white/30 top-0 right-0 w-[90%] md:w-[60%] lg:w-[40%] xl:w-[33%] lg:max-w-[490px]`}
-      >
-        {/* close button */}
-        <button
-          type="button"
-          onClick={toggleNotifyPanel}
-          className="cursor-pointer block lg:hidden absolute top-6 sm:top-8 right-4 sm:right-8 opacity-20 transition duration-200 hover:opacity-100 p-3 bg-white z-50"
-          aria-label="Close Notify me"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              d="M19 5L5 19M5 5l14 14"
-              color="currentColor"
-            />
-          </svg>
-        </button>
-
-        {/* content */}
-        <div className="p-8 sm:p-10 flex flex-col h-full overflow-y-auto">
-          {/* <div className="mb-12 sm:mb-16">
-            <Link
-              className="font-bold text-3xl inline-block lg:hidden mb-8 sm:mb-16"
-              href="/"
-              aria-label="Logo"
-            >
-              Slink
-            </Link>
-
-            <p className="mb-2 sm:mb-3 opacity-75 text-sm">
-              We are almost ready to launch!
-            </p>
-            <p className="text-2xl sm:text-3xl mb-6 sm:mb-8">
-              Be the first to know
-            </p>
-
-            <form onSubmit={handleSubmit}>
-              <label className="block mb-2 text-sm" htmlFor="email">
-                Enter your email <span className="text-red-500">*</span>
-              </label>
-
-              <div className="flex items-center">
-                <input
-                  className="block w-full h-12 pe-4 focus:outline-none border-b border-gray-300 hover:border-gray-200 focus:border-[var(--primary)] transition duration-200 peer"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="example@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-
-                <button
-                  className="cursor-pointer text-gray-400 border-b border-gray-300 focus:border-[var(--primary)] flex-1 h-12 w-full transition duration-200 focus:outline-none peer-focus:border-[var(--primary)] peer-focus:text-[var(--primary)] focus:text-[var(--primary)] hover:text-[var(--primary)] hover:border-[var(--primary)] focus:shadow-none overflow-clip"
-                  type="submit"
-                  aria-label="Submit notify email"
-                  disabled={buttonState === "loading"}
-                >
-                  <AnimatePresence mode="popLayout" initial={false}>
-                    <motion.span
-                      transition={{ type: "spring", duration: 0.3, bounce: 0 }}
-                      initial={{ opacity: 0, y: -25 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 25 }}
-                      key={buttonState}
-                    >
-                      {buttonCopy[buttonState]}
-                    </motion.span>
-                  </AnimatePresence>
-                </button>
-              </div>
-              {error && <p className="text-red-500 text-xs mt-2">{error}</p>}
-            </form>
-          </div> */}
-
-          <div className="mt-auto">
-            <Image
-              src="/ktm-logo-transparent.png"
-              alt="01"
-              className="mb-6 d-block w-16 lg:w-16 aspect-square object-cover hover:scale-110 duration-[1s] cursor-pointer transition-transform ease-[cubic-bezier(0.16,_1,_0.3,_1)] rounded-lg"
-              height={50}
-              width={50}
-            />
-            <p className="mb-6 opacity-60 text-[15px]">About Kutumia</p>
-            <p className="text-[15px] sm:text-base leading-relaxed sm:leading-loose">
-              This domain <strong>(kutumia.ro)</strong> is owned and operated by{" "}
-              <strong>Asociația Kutumia</strong>, a registered nonprofit
-              organization in Romania.
-            </p>{" "}
-            <p className="mb-2">
-              <strong>Legal name: </strong>Asociația Kutumia
-            </p>{" "}
-            <p className="mb-2">
-              <strong>Charity Id: </strong>53710769
-            </p>{" "}
-            <p className="mb-2">
-              <strong>Address: </strong>
-              Str. Decebal, nr. 8, et.1, ap.3, jud. Cluj, mun. Cluj-Napoca,
-              Cluj, Cluj{" "}
-            </p>
-            <p className="mb-2">
-              <strong>Country: </strong>Romania
-            </p>
-            <p className="mb-2">
-              <strong>Official contact: </strong>contact@kutumia.ro
-            </p>
-            <p className="mb-2">
-              <strong>About the organization: </strong>
-              Kutumia Association is a non-governmental, nonprofit organization
-              founded by three women who brought together their experiences with
-              the belief that through education and learning we build people and
-              communities for the future.
-            </p>
-            <p className="mb-2">
-              <strong>Funding: </strong>
-              The activities of the organization are supported through
-              donations, sponsorships and partnerships with individuals and
-              organizations that support our mission.{" "}
-            </p>
-            <p>Website currently under development.</p>
-            <ul className="flex gap-3 mt-8 [&_a]:bg-gray-100">
-              {/* <li className="hover:filter-[url(#ripples2)]">
+        <div className="mt-auto mb-auto">
+          <p className="mb-6 opacity-60 text-[15px]">About Kutumia</p>
+          <p className="text-[15px] sm:text-base leading-relaxed sm:leading-loose">
+            This domain <strong>(kutumia.ro)</strong> is owned and operated by{" "}
+            <strong>Asociația Kutumia</strong>, a registered nonprofit
+            organization in Romania.
+          </p>{" "}
+          <p className="mb-2">
+            <strong>Legal name: </strong>Asociația Kutumia
+          </p>{" "}
+          <p className="mb-2">
+            <strong>Charity Id: </strong>53710769
+          </p>{" "}
+          <p className="mb-2">
+            <strong>Address: </strong>
+            Str. Decebal, nr. 8, et.1, ap.3, jud. Cluj, mun. Cluj-Napoca, Cluj,
+            Cluj{" "}
+          </p>
+          <p className="mb-2">
+            <strong>Country: </strong>Romania
+          </p>
+          <p className="mb-2">
+            <strong>Official contact: </strong>contact@kutumia.ro
+          </p>
+          <p className="mb-2">
+            <strong>About the organization: </strong>
+            Kutumia Association is a non-governmental, nonprofit organization
+            founded by three women who brought together their experiences with
+            the belief that through education and learning we build people and
+            communities for the future.
+          </p>
+          <p className="mb-2">
+            <strong>Funding: </strong>
+            The activities of the organization are supported through donations,
+            sponsorships and partnerships with individuals and organizations
+            that support our mission.{" "}
+          </p>
+          <p>Website currently under development.</p>
+          <ul className="flex gap-3 mt-8 [&_a]:bg-gray-100 mb-16">
+            {/* <li className="hover:filter-[url(#ripples2)]">
                 <Link
                   className="w-full h-10 min-w-10 grid place-content-center hover:border-[var(--primary)] transition duration-200 hover:bg-[var(--primary)] hover:text-white"
                   href="#"
@@ -349,37 +221,37 @@ const Demo2 = () => {
                   </svg>
                 </Link>
               </li> */}
-              <li className="hover:filter-[url(#ripples2)]">
-                <Link
-                  className="w-full h-10 min-w-10 grid place-content-center hover:border-[var(--primary)] transition duration-200 hover:bg-[var(--primary)] hover:text-white"
-                  href="https://www.facebook.com/kutumia.ro"
+            <li className="hover:filter-[url(#ripples2)]">
+              <Link
+                className="w-full h-10 min-w-10 grid place-content-center hover:border-[var(--primary)] transition duration-200 hover:bg-[var(--primary)] hover:text-white"
+                href="https://www.facebook.com/kutumia.ro"
+              >
+                <svg
+                  className="h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
                 >
-                  <svg
-                    className="h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    fill="currentColor"
-                  >
-                    <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
-                  </svg>
-                </Link>
-              </li>
-              <li className="hover:filter-[url(#ripples2)]">
-                <Link
-                  className="w-full h-10 min-w-10 grid place-content-center hover:border-[var(--primary)] transition duration-200 hover:bg-[var(--primary)] hover:text-white"
-                  href="https://www.linkedin.com/company/kutumia.ro"
+                  <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                </svg>
+              </Link>
+            </li>
+            <li className="hover:filter-[url(#ripples2)]">
+              <Link
+                className="w-full h-10 min-w-10 grid place-content-center hover:border-[var(--primary)] transition duration-200 hover:bg-[var(--primary)] hover:text-white"
+                href="https://www.linkedin.com/company/kutumia.ro"
+              >
+                <svg
+                  className="h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  fill="currentColor"
                 >
-                  <svg
-                    className="h-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    fill="currentColor"
-                  >
-                    <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
-                  </svg>
-                </Link>
-              </li>
-              {/* <li className="hover:filter-[url(#ripples2)]">
+                  <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                </svg>
+              </Link>
+            </li>
+            {/* <li className="hover:filter-[url(#ripples2)]">
                 <Link
                   className="w-full h-10 min-w-10 grid place-content-center hover:border-[var(--primary)] transition duration-200 hover:bg-[var(--primary)] hover:text-white"
                   href="#"
@@ -394,10 +266,20 @@ const Demo2 = () => {
                   </svg>
                 </Link>
               </li> */}
-            </ul>
-          </div>
+          </ul>
         </div>
-      </motion.aside>
+
+        {/* footer */}
+        <footer className="py-8">
+          <div className="text-center">
+            <span className="text-sm text-balance inline-block">
+              &copy; {new Date().getFullYear()} Asociația Kutumia
+            </span>
+          </div>
+        </footer>
+      </motion.section>
+
+      {/* sidebar */}
 
       {/* sidebar overlay */}
       <section
